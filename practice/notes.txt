@@ -1,0 +1,26 @@
+newline == <BR /> // tag for newline in html, only placed in one place (start&end_tag)
+
+<IMG SRC ="your.JPG.etc"> // tag for setting image in html
+
+<A HREF="http://yourlinkyouwanttouse.com"> // tag for setting a link in html for a webpage
+what ever you want to type about the link and end with this tag -> !</A>
+
+<H1> To format text into title font/size </H1>
+
+<STYLE>
+	H1 {color:red;} // if u want to change the color of the title font
+</STYLE>
+
+when using the H1 flag i can turn other lines of text into the same color etc.
+
+id="your_new_id_tag" == u can use this inside that STYLE flags to edit image,txt & etc.
+#your_new_id_tag {border:5px solid red;} == would give borders for image for example.
+
+.myclass {color:green;} == use this inside the style tags to change multiple lines;
+<A class="myclass" HREF="https://en.wikipedia.org/wiki/Goat">&nbsp;If not, it's time to learn something about goats!</A>
+<H1 class="myclass">this text would be green aswell</H1>
+
+<table> == tag for creating tables in html
+<tr> == short for table rows. multiple td tags will align next to eachother on the left side
+<td> == not short for table columns but that what it is for. td is acutally short fot table data
+<table border="1"> == draws simple border for the table;
