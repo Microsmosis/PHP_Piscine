@@ -6,5 +6,6 @@
 	if ($_GET['action'] == 'del' && $_GET['name'] != '')
 		setcookie($_GET['name'], '', time() - 3600);
 		/* some issues with the delete, does not actually do it when using curl -b "get",
-		this whole day of exo's is a bit weird still so do check during piscine with peers! */
+		this whole day of exo's is a bit weird still so do check during piscine with peers! 
+		!!! might want to add the !$_GET['value'] in the 2 last if statements*/
 ?>

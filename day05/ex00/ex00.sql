@@ -1,0 +1,1 @@
+CREATE DATABASE db_llonnrot; /* to create a database */
