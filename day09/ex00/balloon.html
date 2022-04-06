@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#balloon {
+				width : 200px;
+				height : 200px;
+				background-color: red;
+				border-radius: 50%;
+				margin: auto;
+				margin-top: 50%;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="balloon" onclick="balloonClick()" onmouseleave="balloonHover()"></div>
+	</body>
+	
+	<script>
+		let size = 200;
+		let index = 0;
+		const colors = ['red', 'green', 'blue'];
+		let balloon = document.getElementById("balloon");
+		
+		function balloonClick() {
+			index++;
+			if (index == 3)
+				index = 0;
+			if (size > 420)
+				size = 200;
+			size += 10;
+			balloon.style.backgroundColor = colors[index];
+			balloon.style.width = size + "px";
+			balloon.style.height = size + "px";
+		}
+		
+		function balloonHover() {
+			index--;
+			if (index == -1)
+				index = 2;
+			balloon.style.backgroundColor = colors[index];
+			if (size > 200)
+			{
+				size -= 5;
+				balloon.style.width = size + "px";
+				balloon.style.height = size + "px";
+			}
+		}
+	</script>
+</html>
