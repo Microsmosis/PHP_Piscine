@@ -6,6 +6,6 @@
 		$first = array_shift($str);
 		foreach ($str as $elements)
 			echo $elements . " ";
-		echo $first;
+		echo $first . "\n";
 	}
 ?>
