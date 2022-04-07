@@ -2,6 +2,12 @@
 <html>
 	<head>
 		<style>
+			#calc{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 50vh;
+			}
 			input {
 				border-color: rgb(255, 0, 0);
 				background-color: rgb(255, 255, 255);
@@ -13,9 +19,9 @@
 				background-color: rgb(255, 255, 255);
 			}
 			body {
-				background: linear-gradient(-45deg, #ee7752, #e73c3c, #f7fafb, #faccbd);
+				background: linear-gradient(-45deg, #ee7752, #e73c3c, #38a5c9, #f19779);
 				background-size: 400% 400%;
-				animation: gradient 15s ease infinite;
+				animation: gradient 5s ease infinite;
 				height: 90vh;
 			}
 			@keyframes gradient {
@@ -29,69 +35,57 @@
 					background-position: 0% 50%;
 				}
 			}
-			#righty {
-				position: absolute;
-				margin: 50vw 50vw 50vw 24.5vw;
-			}
-			#lefty {
-				position: absolute;
-				margin: 50vw 50vw 50vw 43.7vw;
-			}
-			#selectah {
-				position: absolute;
-				margin: 50.1vw 50vw 50vw 40.4vw;
-			}
-			#tryme {
-				position: absolute;
-				margin: 50vw 50vw 50vw 59.6vw;
-			}
 		</style>
 	</head>
 	
 	<body>
-	
-		<input id="righty" type="text" value="Give input..." id="leftField">
-		<select id="selectah" id="operators">
-			<option value="+">+</option>
-			<option value="-">-</option>
-			<option value="*">*</option>
-			<option value="/">/</option>
-			<option value="%">%</option>
-		</select>
-		<input id="lefty" type="text" value="			...and here" id="rightField">
-		<input id="tryme" type="submit" value="Try Me!" onclick="tryMe()">
+		<div id="calc">
+			<input type="text" value="Give input..." id="leftField">
+			<select id="operators">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			</select>
+			<input type="text" value="  		...and here" id="rightField">
+			<input type="submit" value="Try Me!" onclick="tryMe()">
+		</div>
 
 	</body>
-	
+
 	<script>
-		setInterval("alert('Please, use me...')", 30000);
+		setInterval("alert('Please, use me...')", 300000000);
+
 		function tryMe () {
 			var left = Number(document.getElementById("leftField").value);
 			var right = Number(document.getElementById("rightField").value);
 			var selection = document.getElementById("operators").value;
-
+			var sum;
 			if (validate(left, right) == 1)
 			{
 				if (selection == '+')
-					alert(left + right);
+					sum = left + right;
 				if (selection == '-')
-					alert (left - right);
+					sum = left - right;
 				if (selection == '*')
-					alert (left * right);
+					sum = left * right;
 				if (selection == '/')
 				{
 					if (right == 0)
-						alert ("It's over 9000!");
+						sum = "It's over 9000!";
 					else
-						alert (left / right);
+						sum = left / right;
 				}
 				if (selection == '%')
 				{
 					if (right == 0)
-						alert ("It's over 9000!");
+						sum = "It's over 9000!";
 					else
-						alert (left % right);
+						sum = left % right;
 				}
+				alert (sum);
+				console.log (sum);
 			}
 		}
 
