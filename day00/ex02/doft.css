@@ -12,68 +12,140 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 25vh;
-	border: 12px solid rgb(140, 140, 140); 
-	border-radius: 16px;
-	box-shadow: 13px 13px 11px black;
+	border: 11px solid rgb(144, 144, 144); 
+	border-radius: 14px;
+	box-shadow: 11px 13px 9px black;
 }
 
 #entrez {
 	position: absolute;
 	background-color: rgb(129, 255, 142);
-	border-radius: 20px;
-	width: 550px;
-	height: 180px;
-	border-radius: 12px;
-	box-shadow: 13px 13px 11px black;
+	width: 545px;
+	height: 170px;
+	border-radius: 14px;
+	box-shadow: 11px 13px 9px black;
 	top: 525px;
-	left: 480px;
+	left: 484px;
 	
 }
 
 #sidebarleft {
 	position: absolute;
-	background-color: rgb(140, 140, 140);
-	border-radius: 16px;
-	width: 155px;
-	height: 440px;
-	border-radius: 12px;
-	box-shadow: 13px 13px 11px black;
-	top: 315px;
-	left: 562px;
+	background-color: rgb(144, 144, 144);
+	width: 140px;
+	height: 435px;
+	border-radius: 14px;
+	box-shadow: 11px 13px 9px black;
+	top: 313px;
+	left: 582px;
 }
 
 #sidebarright {
 	position: absolute;
-	background-color: rgb(140, 140, 140);
-	border-radius: 16px;
-	width: 155px;
-	height: 440px;
-	border-radius: 12px;
-	box-shadow: 13px 13px 11px black;
-	top: 315px;
-	left: 1844px;
+	background-color: rgb(144, 144, 144);
+	width: 140px;
+	height: 435px;
+	border-radius: 14px;
+	box-shadow: 11px 13px 9px black;
+	top: 313px;
+	left: 1835px;
 }
 
 #topbar {
 	position: absolute;
-	background-color: rgb(140, 140, 140);
-	border-radius: 16px;
-	width: 1525px;
-	height: 155px;
-	border-radius: 12px;
-	box-shadow: 13px 13px 11px black;
-	top: 133px;
-	left: 518px;
+	background-color: rgb(144, 144, 144);
+	width: 1465px;
+	height: 140px;
+	border-radius: 14px;
+	box-shadow: 11px 13px 9px black;
+	top: 148px;
+	left: 547px;
 }
-/*	width: 1000px;
-	height: 562px;
-	border: 10px;
-	border-style: solid;
-	border-color: #909090;
-	color: black;
-	background-color: #909091;
-	border-radius: 10px;
-	box-shadow: 10px 10px 10px black;
-	display: block;
-	margin-left: 30px;
-	float: left; */
+
+#doft42 {
+	position: absolute;
+	width: 450px;
+	height: 118px;
+	top: 160px;
+	left: 555px;
+}
+
+#arrow {
+	position: absolute;
+	width: 69px;
+	height: 70px;
+	top: 331px;
+	left: 616px;
+}
+
+#hand {
+	position: absolute;
+	width: 72px;
+	height: 73px;
+	top: 413px;
+	left: 613px;
+}
+
+#eye {
+	position: absolute;
+	width: 66px;
+	height: 64px;
+	top: 491px;
+	left: 613px;
+	border: 5.5px solid rgb(255, 0, 0); 
+	border-radius: 6px;
+}
+
+#tools {
+	position: absolute;
+	width: 68px;
+	height: 68px;
+	top: 574px;
+	left: 617px;
+}
+
+#chatychaty {
+	position: absolute;
+	width: 69px;
+	height: 68px;
+	top: 650px;
+	left: 614px;
+}
+
+#cross {
+	position: absolute;
+	top: 258px;
+	left: 1982px;
+}
+
+#refresh {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 158px;
+	left: 1981px;
+}
+
+#mag {
+	position: absolute;
+	width: 260px;
+	height: 148px;
+	top: 159px;
+	left: 1718px;
+}
+
+#panic {
+	position: absolute;
+	width: 70px;
+	height: 96px;
+	top: 330px;
+	left: 1871px;
+}
+
+#towel {
+	position: absolute;
+	width: 75px;
+	height: 55px;
+	top: 438px;
+	left: 1868px;
+}
