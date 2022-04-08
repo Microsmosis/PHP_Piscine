@@ -20,13 +20,63 @@ body {
 #entrez {
 	position: absolute;
 	background-color: rgb(129, 255, 142);
-	width: 545px;
+	width: 530px;
 	height: 170px;
 	border-radius: 14px;
 	box-shadow: 11px 13px 9px black;
 	top: 525px;
-	left: 484px;
-	
+	left: 504px;
+}
+
+#textInEntrez {
+	position: absolute;
+	top: 547px;
+	left: 515px;
+	font-size: 17px;
+	font-family: sans-serif;
+}
+
+#textEntrez {
+	position: absolute;
+	top: 530px;
+	left: 558px;
+	font-size: 35px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-weight: lighter;
+}
+
+#dordinateurs {
+	position: absolute;
+	top: 568px;
+	left: 529px;
+	font-size: 17px;
+	font-family: sans-serif;
+	text-shadow: 0.3vw 0.4vh 4px #ff0000e2;
+}
+
+#d {
+	position: absolute;
+	top: 568px;
+	left: 515px;
+	font-size: 17px;
+	font-family: sans-serif;
+}
+
+#dots {
+	position: absolute;
+	top: 568px;
+	left: 615px;
+	font-size: 17px;
+	font-family: sans-serif;
+}
+
+#bonjour {
+	position: absolute;
+	top: 588px;
+	left: 514px;
+	font-size: 17px;
+	font-family: sans-serif;
+	font-style: italic;
 }
 
 #sidebarleft {
@@ -131,7 +181,7 @@ body {
 	width: 260px;
 	height: 148px;
 	top: 159px;
-	left: 1718px;
+	left: 1720px;
 }
 
 #panic {
@@ -148,4 +198,37 @@ body {
 	height: 55px;
 	top: 438px;
 	left: 1868px;
+}
+
+#brick {
+	background-image: url("resources/brick.jpeg");
+	background-size: 30.2px;
+	position: absolute;
+	top: 498px;
+	left: 1849px;
+	max-width: 88%;
+	width: 113.7px;
+	height: 66.5px;
+}
+
+input {
+	position: absolute;
+	width: 14%;
+	top: 611px;
+	left: 517px;
+	border: inset;
+	border-radius: 1%;
+}
+
+#respondbutton {
+	position: absolute;
+	top: 611px;
+	left: 890px;
+	font-size: 14px;
+}
+
+#ikea {
+	position: absolute;
+	top: 740px;
+	left: 1150px;
 }
