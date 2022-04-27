@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Try Me!</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<style>
+			#calc{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 50vh;
+			}
+			input {
+				border-color: rgb(255, 0, 0);
+				background-color: rgb(255, 255, 255);
+				width: 15%;
+				border-radius: 5px;
+			}
+			select {
+				border-color: rgb(255, 0, 0);
+				background-color: rgb(255, 255, 255);
+			}
+			body {
+				background: linear-gradient(-45deg, #ee7752, #e73c3c, #38a5c9, #f19779);
+				background-size: 400% 400%;
+				animation: gradient 5s ease infinite;
+				height: 90vh;
+			}
+			@keyframes gradient {
+				0% {
+					background-position: 0% 50%;
+				}
+				50% {
+					background-position: 100% 50%;
+				}
+				100% {
+					background-position: 0% 50%;
+				}
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="calc">
+			<input type="text" value="" id="leftField">
+			<select id="operators">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			</select>
+			<input type="text" value="" id="rightField">
+			<input type="submit" id="submit" value="Try Me!">
+		</div>
+
+	</body>
+
+	<script>
+		var selection;
+		var right;
+		var left;
+		var calc;
+		$(document).ready(function() {
+			submit = $('#submit');
+			submit.click(tryMe);
+			setInterval("alert('Please, use me...')", 30000);
+		});
+		
+		function tryMe () {
+			left = $('#leftField').val();
+			right = $('#rightField').val();
+			selection = $('#operators').val();
+			if (left == "" || right == "" || left.indexOf(".") != -1 || right.indexOf(".") != -1)
+				return alert ("Error :(");
+			else
+			{
+				left = Number(left);
+				right = Number(right);
+			}
+			var sum;
+			if (validate(left, right) == 1)
+			{
+				if (selection == '+')
+					sum = left + right;
+				if (selection == '-')
+					sum = left - right;
+				if (selection == '*')
+					sum = left * right;
+				if (selection == '/')
+				{
+					if (right == 0)
+						sum = "It's over 9000!";
+					else
+						sum = left / right;
+				}
+				if (selection == '%')
+				{
+					if (right == 0)
+						sum = "It's over 9000!";
+					else
+						sum = left % right;
+				}
+				alert (sum);
+				console.log (sum);
+				
+			}
+		}
+
+		function validate(left, right)
+		{
+			if (left < 0 || right < 0 || isNaN(left) || isNaN(right))
+			{
+				alert ("Error :(");
+				return 0;
+			}
+			return 1;
+		}
+	</script>
+</html>

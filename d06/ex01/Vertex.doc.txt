@@ -1,0 +1,28 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles x,y,z and w cordinates aswell the instances created
+with the Color class.
+
+An instance can be constructed from x,y,z coordinates. W cordinate is optional.
+$vtxO  = new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0, 'w' => 2.0) );
+or
+$unitX = new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0, 'color' => $green ) );
+
+If Color instance is not used as a argument 'color' will be filled with
+$color = new Color( array('red' => 255, 'green' => 255, 'blue' => 255) )
+by default.
+
+If the 'w' value is not passed in the arguments it will be always be 1.0 as default.
+
+x, y, z and w coordinates values are converted to floats.
+
+The class provides the following methods :
+
+function getX()
+Fetch the value of $this->x;
+
+function setX(42)
+Change the value of $this->x;
+
+There is same functions aswell for the y,z and w coordiantes and the color instance.
+---------------------------------------------------------------------- Vertex ->

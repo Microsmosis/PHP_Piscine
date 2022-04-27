@@ -1,0 +1,143 @@
+body {
+	background-color: rgb(223, 181, 75);
+}
+
+h1 {
+	text-align: center;
+	font-size: 5vw;
+	font-family: Arial, sans-serif;
+	top: 0.1vw;
+}
+
+h2 {
+	position: absolute;
+	font-size: 2vw;
+	font-family: Arial, sans-serif;
+	top: 8vw;
+	left: 44vw;
+}
+
+#sncfImg {
+	position: absolute;
+	width: 7vw;
+	height: 7vw;
+	top: 2.5vw;
+	left: 10vw;
+}
+
+#sandoImg {
+	position: absolute;
+	width: 11vw;
+	height: 6.5vw;
+	top: 3.5vw;
+	left: 82vw;
+}
+
+#droplocation {
+	position: absolute;
+	top: 13vw;
+	left: 31vw;
+}
+
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 0.6vw;
+	font-size: 0.6vw;
+	border: none;
+	border-radius: 5vw;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 7vw;
+	box-shadow: 0vw 0.2vw 0.4vw 0vw rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 0.7vw 0.9vw;
+	display: block;
+}
+
+.dropdown-content a:hover {background-color: #caeda9}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+
+.dropdown li {
+	position: relative;
+	list-style: none;
+}
+
+.dropdown li a {
+	color: #000000; /* for font color */
+	text-align: center;
+	display: block;
+	padding: 0.5vw;
+}
+
+.dropdown li ul {
+	position: absolute;
+	top: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: none;
+	line-height: normal;
+	left: 50%;
+	background-color: #333;
+}
+
+.dropdown li ul li a {
+	text-align: left;
+	color: #cccccc;
+	font-size: 0.6vw;
+	padding: 0.5vw;
+	display: block;
+	white-space: nowrap;
+}
+
+
+.dropdown li ul li ul {
+	left: 100%;
+	top: 0;
+	background-color: #17d362;
+	
+}
+.dropdown li ul li ul a {
+	text-align: left;
+	color: #070404;
+	font-size: 0.6vw;
+	padding: 0.5vw;
+	display: block;
+	white-space: nowrap;
+}
+
+.dropdown li ul li a:hover {
+	background-color: #0abf53;
+	color: #ffffff;
+}
+
+ul li:hover>a {
+	background-color: #0abf53;
+	color: #000000;
+}
+
+ul li:hover>ul {
+	display: block;
+}
